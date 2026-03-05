@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="diagramme challenge 2"/>
+        <attribute name="authors" value="X1 Carbon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 12:28:16 "/>
+        <attribute name="created" value="WDEgQ2FyYm9uO1NUR19TQUQyOzIwMjYtMDMtMDU7IjExOjAwOjE2ICI7MjU0Nw=="/>
+        <attribute name="edited" value="WDEgQ2FyYm9uO1NUR19TQUQyOzIwMjYtMDMtMDU7IjEyOjI4OjE2ICI7MTsyNjY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prix" type="Integer" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <assign variable="age" expression="13"/>
+            <if expression="age &lt; 12">
+                <then>
+                    <assign variable="prix" expression="20"/>
+                    <output expression="&quot;Special: Children's Menu included!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="age &gt;=12 &amp;&amp; age&lt;=18">
+                        <then>
+                            <assign variable="prix" expression="40"/>
+                        </then>
+                        <else>
+                            <if expression="age &gt; 60">
+                                <then>
+                                    <assign variable="prix" expression="30"/>
+                                </then>
+                                <else>
+                                    <assign variable="prix" expression="60"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
